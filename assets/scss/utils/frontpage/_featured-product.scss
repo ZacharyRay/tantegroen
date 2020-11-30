@@ -1,0 +1,94 @@
+.featured-front {
+  .wp-block-group__inner-container {
+    .wp-block-columns {
+      .wp-block-column {
+        .wc-block-featured-product {
+          background-color: rgba(0, 0, 0, 0);
+          height: 100%;
+        }
+        h2 {
+          display: none;
+        }
+        .wc-block-featured-product__link {
+          display: none;
+          .wp-block-button {
+            .wp-block-button__link {
+              background-color: $button-green;
+              color: $primary-white;
+            }
+          }
+        }
+      }
+      .wp-block-column:hover .wc-block-featured-product {
+        background-color: #fff !important;
+      }
+      .wp-block-column:hover h2 {
+        display: block;
+      }
+      .wp-block-column:hover .wc-block-featured-product__link {
+        display: block;
+        background-color: rgba(0, 0, 0, 0);
+      }
+      .wc-block-featured-category {
+        background-color: rgba(0, 0, 0, 0);
+        height: 100%;
+        h2 {
+          display: none;
+        }
+        .wc-block-featured-category__link {
+          display: none;
+          .wp-block-button {
+            .wp-block-button__link {
+              background-color: $button-green;
+              color: $primary-white;
+            }
+          }
+        }
+      }
+      .wp-block-column:hover .wc-block-featured-category {
+        background-color: #fff !important;
+      }
+      .wp-block-column:hover .wc-block-featured-category__link {
+        display: block;
+        background-color: rgba(0, 0, 0, 0);
+      }
+      .featured-product-link-out {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 1fr;
+        height: 100%;
+        .wp-block-column:nth-child(1) {
+          grid-column: 1 / 1;
+          grid-row: 1 / 1;
+          .wp-block-cover {
+              padding: 0px;
+          }
+        }
+        .wp-block-column:nth-child(2) {
+          grid-column: 2 / 2;
+          grid-row: 1 / 1;
+          z-index: 9;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          background-color: $featured-email;
+          margin-left: 0px;
+          h2 {
+            display: block !important;
+            font-size: 2.5rem;
+            color: $primary-white;
+          }
+          p {
+              font-size: 1.7rem;
+              color: $primary-white;
+          }
+          .wp-block-buttons {
+            .wp-block-button {
+            }
+          }
+        }
+      }
+    }
+  }
+}

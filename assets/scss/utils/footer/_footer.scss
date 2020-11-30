@@ -1,0 +1,26 @@
+.footer {
+    .footer-nav {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+          "nav"
+          "child1"
+          "child2";
+        @include ipad-small {
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(1, 1fr);
+          grid-template-areas: "nav child1 child2";
+        }
+    }
+    div:nth-child(1) {
+        grid-area: nav;
+    }
+    div:nth-child(2) {
+        grid-area: child1;
+    }
+    div:nth-child(3) {
+        grid-area: child2;
+    }
+}

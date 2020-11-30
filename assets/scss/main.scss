@@ -1,0 +1,13 @@
+// Import scss files
+
+// settings always on top
+@import "./utils/settings/colors.scss";
+@import "./utils/settings/fonts.scss";
+@import "./utils/settings/media-queries.scss";
+@import "./utils/settings/global.scss";
+
+// utils
+@import "./utils/footer/footer";
+@import "./utils/header/burger";
+@import "./utils/header/header.scss";
+@import "./utils/frontpage/featured-product.scss";

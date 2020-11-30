@@ -1,0 +1,36 @@
+// Iphone 5 / SE
+@mixin iphone-small {
+    @media (min-width: 320px) {
+        @content;
+    }
+}
+//iphone 6, 7, 8, X
+@mixin iphone-medium {
+    @media (min-width: 375px) {
+        @content;
+    }
+}
+//iphone 6, 7, 8 plus
+@mixin iphone-plus {
+    @media (min-width: 414px) {
+        @content;
+    }
+}
+//ipad
+@mixin ipad-small {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+//ipad pro
+@mixin ipad-large {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+//desktop small
+@mixin desktop-small {
+    @media (min-width: 1280px) {
+        @content;
+    }
+}
